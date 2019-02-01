@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #5f5f5f;
+    letter-spacing: 2px;
+    /* 字的間距 */
+}
+
+header {
+    text-align: right;
+    padding: 5px;
+    /* border-bottom: 1px solid #ccc; */
+    /* 下面一條線 */
+}
+
+nav a {
+    margin-left: 10px;
+    font-weight: normal;
+    color: #5f5f5f;
+    text-decoration: none;
+}
+
+.picPosi {
+    /* 先劃分一個欄位(div) */
+    position: relative;
+    /* 設定它的位置 */
+    width: 450px;
+    height: 450px;
+    font-family: Microsoft JhengHei;
+    text-align: center;
+}
+
+
+/* .picWord {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 450px;
+    height: 450px;
+    display: inline-block;
+    vertical-align: middle;
+    float: left; 
+} */
+
+
+/* .box {
+    height: 30px;
+    width: 10px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #5f5f5f;
+} */
+
+.picWord {
+    color: #5f5f5f;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.picWord::before {
+    height: 450px;
+    content: "";
+    width: 0;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 450px;
+}
+
+.picPosi:hover .pic {
+    display: none;
+}
